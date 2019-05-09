@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <group>
+        <item
+            android:id="@+id/abuot_us"
+            android:icon="@drawable/aboutus"
+            android:title="About us" />
+        <item
+            android:id="@+id/My_hero"
+            android:icon="@drawable/hero"
+            android:title="Hero Profile" />
+        <item
+            android:id="@+id/night_mode"
+            android:icon="@drawable/nightmode"
+            android:title="Night Mode"/>
+        <item
+            android:id="@+id/change_language"
+            android:icon="@drawable/language"
+            android:title="Polish"/>
+    </group>
+</menu>

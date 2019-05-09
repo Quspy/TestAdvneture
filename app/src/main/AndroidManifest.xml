@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mateu.testadventure">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mateusz.siewiera.com.pl"
+                    android:pathPrefix="/mateusz"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.StartGame"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.PathChooser"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainActivity" />
+        </activity>
+        <activity android:name=".Activity.BT1_1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT1_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT111" android:screenOrientation="portrait" />
+        <activity android:name=".Activity.BT112" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT1111_DIE" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT1112_ITEM" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT1113" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT1121" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT11111_FIGHT" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT11211_SNEAK" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT11212_DIE" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT111111" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT121" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT122_ITEM" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT123_DIE" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT1221" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT12211_FIGHT" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT12212_SNEAK" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BigFight" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.EndGame" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BigFightForLoosers" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.EndGameForLoosers" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.HeroProfile" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.AboutUs" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BR111111_LOSE" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT12211_WON" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.BT12211_LOSE" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
